@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contains Method</title>
+	  <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.4.0.css">
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script src="https://code.jquery.com/qunit/qunit-2.4.0.js"></script>
+  <script src="./index.js"></script>
+  <script>
+  	'use strict'
+  	QUnit.test('pluck Method', function(assert) {
+  	            const studentResults = [{ name: 'prakash', marks: 295 },
+        { name: 'madhu', marks: 402 },
+        { name: 'udhaya', marks: 492 }
+    ];
+    const result_N= []
+    const fun = pluck(studentResults, result_N)
+        console.log(result_N)
+
+  		assert.deepEqual(result_N, ["prakash", "madhu", "udhaya"])
+  	})
+  </script>
+</body>
+</html>

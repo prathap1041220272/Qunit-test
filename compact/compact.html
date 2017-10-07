@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contains Method</title>
+	  <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.4.0.css">
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script src="https://code.jquery.com/qunit/qunit-2.4.0.js"></script>
+  <script src="./compact.js"></script>
+  <script>
+  	'use strict'
+  	QUnit.test('Compact Method', function(assert) {
+  	let numbers =[0,1,2,3,"",false,6];
+    var result = filter(numbers)
+     console.log(result)
+  		assert.equal(result, true)
+  	})
+  </script>
+</body>
+</html>

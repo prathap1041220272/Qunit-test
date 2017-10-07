@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contains Method</title>
+	  <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.4.0.css">
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script src="https://code.jquery.com/qunit/qunit-2.4.0.js"></script>
+  <script src="./index.js"></script>
+  <script>
+  	'use strict'
+  	QUnit.test('filter Method', function(assert) {
+  	let numbers =[1,2,3,4,5,6];
+    function number(num) {
+      return num%2 === 0;
+    }
+    var result = values(numbers, number)
+     console.log(result)
+  		assert.deepEqual(result, [2,4,6])
+  	})
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contains Method</title>
+	  <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.4.0.css">
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script src="https://code.jquery.com/qunit/qunit-2.4.0.js"></script>
+  <script src="./index.js"></script>
+  <script>
+  	'use strict'
+  	QUnit.test('invoke Method', function(assert) {
+  	let number =[1,3,2];
+    var result = values(number)
+  		assert.deepEqual(result, [1,2,3])
+  	})
+  </script>
+</body>
+</html>
